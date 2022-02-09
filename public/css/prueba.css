@@ -1,0 +1,429 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+/*IMPORTACIONES*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+/*Variables*/
+
+:raíz {
+    --yellow: #eac926;
+    --blue: #03264c;
+    --celeste: #1259c3;
+    --dark-grey: #666;
+    --light-gray: #ebebeb;
+    --green: #39b54a;
+    --black: #000000;
+    --black: #ffffff;
+    /*Amplitud de fuentes*/
+    --text-sm: 1, 2em;
+    --text-md: 1, 6em;
+    --text-lg: 1, 8em;
+    --title-md: 2, 4em;
+    /* familia de fuentes */
+    --robot: "Roboto", sans-serif;
+}
+
+
+/*Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px (h1)
+Precios: 18px (h2)
+Descuentos: 16px (h3)
+Descripciones: 16px (h4)
+*/
+
+body {
+    font-family: --robot;
+    background-color: var(--blanco);
+}
+
+p {
+    font-size: var(--text-sm);
+}
+
+h1 {
+    font-size: var(--title-md);
+}
+
+h2 {
+    font-size: var(--text-lg);
+}
+
+h3 {
+    font-size: var(--text-md);
+}
+
+h4 {
+    font-size: var(--text-md);
+}
+
+.flex-box {
+    display: flex;
+    border-spacing: 20px;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.button {
+    background-color: var(--celeste);
+    color: var(--white);
+    width: 50%;
+    transition: color de fondo 0, 5 s facilidad;
+    cursor: pointer;
+}
+
+.btn:flotar {
+    background-color: var(--celeste);
+}
+
+
+/*.button {
+    width: 91%;
+    background-color: #033ebd;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16 px;
+}*/
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+
+
+/*Head*/
+
+header {
+    background-color: var(--yellow);
+    padding: 1em 1em 2em;
+}
+
+.top-header {
+    width: 100%;
+}
+
+.logotipo {
+    width: 50%;
+}
+
+.formulario {
+    width: 50%;
+    color: #666;
+    border: 1 px sólido #000;
+}
+
+.logotipo,
+.formulario,
+.buy {
+    margin: 20px;
+}
+
+.burger-menu {
+    display: none;
+    text-align: center;
+    align-items: center;
+    background-color: #0044AA;
+    border-radius: 5 px;
+    color: #fff;
+    font-size: 30px;
+    margin: 10 px 15px;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+nav .navbar ul .first-list {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    font-size: 12px;
+    width: 50%;
+    float: none;
+    color: #000;
+}
+
+nav .navbar ul .second-list {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    font-size: 12px;
+    width: 50%;
+    float: none;
+    color: #000;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+main {
+    width: 90%;
+    align-items: center;
+}
+
+main section .last-visit {
+    margin: 10px;
+}
+
+
+/*Debemos centrar la sección main y que ocupe un 90% del ancho de la pantalla.
+● Entre cada artículo hay una separación de 10 píxeles.
+● Nos piden que manejemos el logo del envío, el precio, el porcentaje de descuento
+y la descripción del artículo como elementos de una caja dentro de la caja general
+del artículo.
+● Nos piden que la misma tenga un borde superior de 1 píxel, línea sólida y color
+#ebebeb.
+● Debe tener separado el contenido de sus bordes en 15 píxeles en cada uno de sus
+lados.*/
+
+main section .products {
+    margin: 10px;
+}
+
+.bottom-product {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: baseline;
+    position: relative;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+main section article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+main section article img {
+    width: 100%;
+}
+
+
+/*Características de tipografía del precio indicadas en M04C03), tamaño del contenedor en */
+
+.price {
+    font-size: 18px;
+    padding: 2px;
+    width: 30%;
+}
+
+.discount {
+    color: #39b54a;
+    margin: auto;
+    font-weight: normal;
+    width: 70%;
+}
+
+main section article .flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.description {
+    width: 100%;
+    text-align: center;
+}
+
+.description-box {
+    height: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+main section article:hover .description {
+    display: block;
+}
+
+.entrada de inicio de sesión [ type='enviar']:hover,
+.registro de entrada [ type='enviar']:hover {
+    background-color: #0022AA;
+}
+
+.discount,
+.description {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+main section article i,
+.discount {
+    color: #39b54a;
+}
+
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    right: 20px;
+    top: -20px;
+}
+
+main section div .products article i {
+    transition: 1s;
+}
+
+main section div .products article:hover i {
+    transform: rotate(-90°);
+}
+
+
+/*main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+   }*/
+
+.button {
+    width: 91%;
+    color: white;
+    background-color: #033ebd;
+    border: none;
+    padding: 12px;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+.button-send {
+    display: block;
+    font-size: 1em;
+    padding: 0.3125em;
+    width: 1.875em;
+    height: 1.875em;
+    border: 0.0625em;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.button-login {
+    font-size: 16px;
+    width: 20%;
+    color: white;
+    background-color: #033ebd;
+    border: none;
+    padding: 12px;
+    margin: 16px 0;
+}
+
+.entrada de inicio de sesión [type='enviar']:hover,
+.registro de entrada [type='enviar']:hover {
+    background-color: #0022AA;
+}
+
+.controls {
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+footer {
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: 100%;
+    background-color: #fff;
+    margin: 15px 0;
+    text-align: center;
+    justify-content: center;
+    padding: 10%;
+}
+
+
+/*Características de tipografía, alineación y ubicación del footer indicadas en M04C03) */
+
+footer h4 {
+    font-weight: bold;
+}
+
+
+/*Detalles de íconos indicados en M04C03) NO ALTERAR*/
+
+.footer-icons {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    line-height: 50px;
+}
+
+
+/*Características del responsive en M04C05), tamaño del contenedor en */
+
+@media (min-width: 361px) {
+    .top-header {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar {
+        display: none;
+    }
+    .burguer-menu i {
+        display: flex;
+    }
+    main section .products {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    main section article:hover .description-box {
+        display: block;
+    }
+    footer {
+        width: 60%;
+    }
+}
+
+@media (min-width: 769px) {
+    .top-header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: stretch;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .burger-menu i {
+        display: none;
+    }
+    main section .products {
+        width: 22%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
